@@ -1,0 +1,37 @@
+@media only screen and (min-width: 768px) {
+
+	.flex, .flex > div[class*='col-'] {
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    flex:1 0 auto;
+	    flex-wrap: wrap;
+	}
+
+	.panel {
+		display: flex;
+	   	flex-direction:column;
+	   	align-content:stretch;
+	}
+
+	.panel-body {
+	   	display: flex;
+	   	flex-grow:1;
+	}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   .ie10up .flex, .flex > div[class*='col-'] {
+   			display:inline;
+   		}
+
+   	.ie10up .panel{
+   		display:inline;
+   	}
+
+   	.ie10up .panel-body{
+   		display:inline;
+   	}
+
+}

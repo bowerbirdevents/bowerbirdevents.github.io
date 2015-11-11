@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Leave a message for Bowerbird Events for more information.">
+    <title>Bowerbird Events - Connect</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Self collapsing navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img alt="Brand" src="images/brand-logo.png" srcset="images/brand-logo.png 1x, images/brand-logo2x.png 2x">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="active"><a href="#">Let's Connect<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- Start Template Here -->
+    <div class="container-fluid main">
+      <div class="col-lg-2 col-md-1"></div>
+      <!-- Main content box -->
+      <div class="col-lg-8 col-md-10 col-sm-12" id="content-box">
+        <div class="page-header">
+          <h1>Let's connect!</h1>
+          <div class="row"><p class="center">seamless logistics + unique designs + sustainability</p></div>
+        </div>
+        <hr>
+        <p class="center">Please leave me your info and I will get back to you!</p>
+
+        <!-- Contact Form -->
+        <form class="form-horizontal well well-lg" method="POST" action="//formspree.io/info@bowerbirdevents.ca">
+          <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">*Name:</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="name" name="name" required="true" placeholder="Your name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">*E-mail:</label>
+            <div class="col-sm-8">
+              <input type="email" class="form-control" id="email" name="email" required="true" placeholder="you@yourdomain.com" aria-describedby="helpBlock">
+              <span id="helpBlock" class="help-block">Please ensure your email is correct.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="col-sm-3 control-label">Phone:</label>
+            <div class="col-sm-5">
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="604-555-1234">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="date" class="col-sm-3 control-label">Date of event:</label>
+            <div class="col-sm-5">
+              <input type="date" class="form-control" id="date" name="date">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" class="col-sm-3 control-label">*Message:</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" rows="4" id="message" name="message" required="true" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <input type="hidden" name="_next" value="contact-received.html">
+          <input type="hidden" name="_subject" value="Bowerbird Events webstie contact form">
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-8">
+              <button type="submit" class="btn btn-info">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-2 col-md-1"></div>
+    </div>
+
+    <!--Footer with contact icon links-->
+    <div class="container-fluid" id="footer">
+      <p>
+        <a class="icon ion-social-instagram-outline" href="https://instagram.com/bowerbird_vancouver/" target="_blank"></a>&nbsp;&nbsp;<a class="icon ion-social-twitter" href="https://twitter.com/bowerbirdevents" target="_blank"></a>&nbsp;&nbsp;<a class="icon ion-android-mail" href="connect.html"></a>
+      </p>
+      <p id="copyright">Copyright © 2015 - Esther Nguyen</p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
